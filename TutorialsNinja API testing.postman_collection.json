@@ -1,0 +1,3456 @@
+{
+	"info": {
+		"_postman_id": "1709b8bd-12c8-49b6-97f4-0177398b6da3",
+		"name": "TutorialsNinja API testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26365744",
+		"_collection_link": "https://lunar-trinity-695976.postman.co/workspace/TutorialNinjasDemo~473e2eb2-9d82-4af5-9c9f-a7ae8fc1495b/collection/26365744-1709b8bd-12c8-49b6-97f4-0177398b6da3?action=share&creator=26365744&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Desktops",
+			"item": [
+				{
+					"name": "Get all Desktops",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Desktops - PC",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=20_26",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "20_26"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Desktops - MAC",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=20_27",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "20_27"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laptops",
+			"item": [
+				{
+					"name": "Get all Laptops",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=18",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "18"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Laptops - MAC",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=18_46",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "18_46"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Laptops - Windows",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=18_45",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "18_45"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Components",
+			"item": [
+				{
+					"name": "Get all Components",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=25",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Mice and Trackballs",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=25_29",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_29"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Monitors (All)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=25_28",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_28"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Monitors (Test 0)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=25_28_35",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_28_35"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Monitors (Test 1)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=25_28_36",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_28_36"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Printers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=25_30",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Scanners",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=25_31",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Components - Web Cameras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=25_32",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "25_32"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tablets",
+			"item": [
+				{
+					"name": "Get all Tablets",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=57",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "57"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Software",
+			"item": [
+				{
+					"name": "Get all Software",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=17",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phones & PDAs",
+			"item": [
+				{
+					"name": "Get all Phones & PDAs",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=24",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cameras",
+			"item": [
+				{
+					"name": "Get all Cameras",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=33",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "33"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MP3 Players",
+			"item": [
+				{
+					"name": "Get all MP3 Players",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 11",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/category&path=34_43",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_43"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 12",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_44",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_44"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 15",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_47",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 16",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_48",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_48"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 17",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_49",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_49"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 18",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_50",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all MP3 Players - test 19",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/category&path=34_51",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/category"
+								},
+								{
+									"key": "path",
+									"value": "34_51"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Homepage",
+			"item": [
+				{
+					"name": "Get Webapp Home page",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}?route=common/home",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "common/home"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Samsung Galaxy Tab 10.1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; __atuvc=4%7C11; currency=USD"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}?route=product/product&path=57&product_id=49",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product"
+								},
+								{
+									"key": "path",
+									"value": "57"
+								},
+								{
+									"key": "product_id",
+									"value": "49"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Macbook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=5%7C11; __atuvs=64145a62fc7ce8d2000"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/product&product_id=43",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product"
+								},
+								{
+									"key": "product_id",
+									"value": "43"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iphone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=6%7C11; __atuvs=64145a62fc7ce8d2001"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/product&product_id=40",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product"
+								},
+								{
+									"key": "product_id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apple Cinema 30\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=7%7C11; __atuvs=64145a62fc7ce8d2002"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/product&product_id=42",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product"
+								},
+								{
+									"key": "product_id",
+									"value": "42"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cannon EOS 5D",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=8%7C11; __atuvs=64145a62fc7ce8d2003"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/product&product_id=30",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product"
+								},
+								{
+									"key": "product_id",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Get Brand - Hewlett Packard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/manufacturer/info&manufacturer_id=7",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/manufacturer/info"
+								},
+								{
+									"key": "manufacturer_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand - Hewlett Packard (HP LP3065)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/manufacturer/info&manufacturer_id=7",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/manufacturer/info"
+								},
+								{
+									"key": "manufacturer_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Wishlist Brand - Hewlett Packard (HP LP3065)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "47",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/wish list/add",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/wish list/add"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add review Brand - Hewlett Packard (HP LP3065)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Arghajit Singha",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "In purpose of doing  API Testing I'm writting this comment",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=product/product/write&product_id=47 ",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "product/product/write"
+								},
+								{
+									"key": "product_id",
+									"value": "47 "
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "My Account",
+			"item": [
+				{
+					"name": "Get Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/account",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/account"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login to My Account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/login"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "arghajitsingha47@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Asughan@4711",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/login",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/login"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit My Account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/edit"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "Arghajit",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Singha",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "arghajit.singha+admin-organizationa@zemosolabs.com",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "+917908984665",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/edit",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/edit"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Account Password",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/password"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "Asughan4711",
+									"type": "text"
+								},
+								{
+									"key": "confirm",
+									"value": "Asughan4711",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/password",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/password"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Wishlist Items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/wishlist",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/wishlist"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Get All Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/address",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/address"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "Arghajit",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Singha",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "Zemoso",
+									"type": "text"
+								},
+								{
+									"key": "address_1",
+									"value": "Sumedh model school",
+									"type": "text"
+								},
+								{
+									"key": "address_2",
+									"value": "Serilingampally,  Hyderabad",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Hyderabad",
+									"type": "text"
+								},
+								{
+									"key": "postcode",
+									"value": "501505",
+									"type": "text"
+								},
+								{
+									"key": "country_id",
+									"value": "99",
+									"type": "text"
+								},
+								{
+									"key": "zone_id",
+									"value": "4231",
+									"type": "text"
+								},
+								{
+									"key": "default",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/address/add",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/address/add"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/address"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/address/delete&address_id=14099",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/address/delete"
+								},
+								{
+									"key": "address_id",
+									"value": "14099"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "My Orders",
+			"item": [
+				{
+					"name": "Get all Order History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/order",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/order"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all downloads",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/download",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/download"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all reward points",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/reward",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/reward"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all product Returns",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/return",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/return"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Your transaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/transaction",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/transaction"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Get all recurring payments",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"No recurring payments found!\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/account"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/recurring",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/recurring"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Newsletter",
+			"item": [
+				{
+					"name": "Subscribe/ Unsubscribe Newsletter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Success: Your newsletter subscription has been successfully updated!\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/newsletter"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "newsletter",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}?route=account/newsletter",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/newsletter"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"item": [
+				{
+					"name": "Euro currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"392.30€\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=4%7C11"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "redirect",
+									"value": "http://tutorialsninja.com/demo/index.php?route=common/home",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=common/currency/currency",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "common/currency/currency"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pound Sterling Currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"£306.25\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "GBP",
+									"type": "text"
+								},
+								{
+									"key": "redirect",
+									"value": "http://tutorialsninja.com/demo/index.php?route=common/home",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=common/currency/currency",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "common/currency/currency"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "US Dollar Currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"$500.00\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; __atuvc=4%7C11; currency=GBP"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=common/home"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "redirect",
+									"value": "http://tutorialsninja.com/demo/index.php?route=common/home",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=common/currency/currency",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "common/currency/currency"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "About us",
+			"item": [
+				{
+					"name": "About Us",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"About Us\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=information/contact"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=4",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/information"
+								},
+								{
+									"key": "information_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delivery Information",
+			"item": [
+				{
+					"name": "Delivery Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Delivery Information\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=4"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=6",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/information"
+								},
+								{
+									"key": "information_id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Privacy Policy",
+			"item": [
+				{
+					"name": "Privacy Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Privacy Policy\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=6"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=3",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/information"
+								},
+								{
+									"key": "information_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Terms and Conditions",
+			"item": [
+				{
+					"name": "Terms and Conditions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.test(\"Body matches string\", function () {",
+									"//     pm.expect(pm.response.text()).to.include(\"Terms & Conditions\");",
+									"// });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=3"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/information&information_id=5",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/information"
+								},
+								{
+									"key": "information_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer Service",
+			"item": [
+				{
+					"name": "Contact Us",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=information/contact"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Arghajit",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "arghajit.singha+admin-organizationa@zemosolabs.com",
+									"type": "text"
+								},
+								{
+									"key": "enquiry",
+									"value": "API Testing",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/contact",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/contact"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Returns",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Thank you for submitting your return request. Your request has been sent to the relevant department for processing.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11; __atuvs=64145a62fc7ce8d2004"
+							},
+							{
+								"key": "Origin",
+								"value": "http://tutorialsninja.com"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/return/add"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "Arghajit",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Singha",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "arghajit.singha+admin-organizationa@zemosolabs.com",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "+917908984665",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "date_ordered",
+									"value": "2023-03-17",
+									"type": "text"
+								},
+								{
+									"key": "product",
+									"value": "MAC",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "3020",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "return_reason_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "opened",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=account/return/add",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "account/return/add"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SiteMap",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "OCSESSID=0969c3b623511d6513459ffc57; language=en-gb; currency=USD; __atuvc=9%7C11"
+							},
+							{
+								"key": "Referer",
+								"value": "http://tutorialsninja.com/demo/index.php?route=account/return/success"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "http://tutorialsninja.com/demo/index.php?route=information/sitemap",
+							"protocol": "http",
+							"host": [
+								"tutorialsninja",
+								"com"
+							],
+							"path": [
+								"demo",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "route",
+									"value": "information/sitemap"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://tutorialsninja.com/demo/index.php",
+			"type": "string"
+		}
+	]
+}
