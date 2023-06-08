@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "0ed235f0-29f1-45e3-bbc7-1d30827ddda8",
+		"name": "Day 13: Mock servers",
+		"description": "## Instructions for Day 13: Mock servers\n\n1.  **Get the challenge:** Fork the parent collection to your own public workspace.\n2.  **Read the documentation:** Select the first folder. Expand the context bar on the right to follow the instructions in the collection documentation.\n3.  **Submit your solution:** Select the second folder and follow the instructions in the documentation to validate your solution.\n  \n## Learning objectives\n- Use mock servers to prototype scenarios\n- Explain consumer-driven contract testing using mocks\n- Establish a process for snapshot testing using mocks\n- Generate boilerplate code to replicate API calls  \n\n## Concepts covered\n*   [Set up mock servers](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/)\n* [Generate code snippets](https://learning.postman.com/docs/sending-requests/generate-code-snippets/)\n    \n\n## Additional resources\n*   [Fake it till you make it: mocks for agile development](https://medium.com/better-practices/https-medium-com-postman-engineering-fake-it-till-you-make-it-mocks-for-agile-development-f4d050cad694) blog\n*   [Mock Servers](https://youtu.be/n_7UUghLpco) Exploratory video\n* [Consumer-driven contract testing](https://medium.com/better-practices/consumer-driven-contract-testing-using-postman-f3580dba5370) blog\n* [Snapshot testing for APIs using Postman](https://medium.com/better-practices/snapshot-testing-for-apis-using-postman-7f9f26295d6b) blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26365744",
+		"_collection_link": "https://www.postman.com/lunar-trinity-695976/workspace/arghajit-singha-workspace/collection/26365744-0ed235f0-29f1-45e3-bbc7-1d30827ddda8?action=share&creator=26365744&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Mock servers",
+			"item": [
+				{
+					"name": "dad jokes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// example testing:",
+									"// More found here: https://www.getpostman.com/docs/postman/scripts/test_examples",
+									"",
+									"// TEST 1",
+									"pm.test(\"response is ok\", () => {",
+									"    pm.response.to.be.ok // enforce 200ish",
+									"    // same as above pm.response.to.not.be.error",
+									"    ",
+									"    // HTTP good, but contents cannot say error ",
+									"    pm.response.to.not.have.jsonBody(\"error\")",
+									"})",
+									"",
+									"// TEST 2",
+									"pm.test(\"Body has string `joke`\", () => {",
+									"    pm.expect(pm.response.text()).to.include(\"joke\")",
+									"})",
+									"",
+									"",
+									"// TEST 3",
+									"pm.test(\"Response time is less than 500ms\", () => {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500)",
+									"})",
+									"",
+									"",
+									"// Schema generated from https://jsonschema.net/#/",
+									"// Donate to these wonderful people 💚",
+									"// Settings:  No metadata + required",
+									"const schema = {",
+									"    \"$schema\": \"https://json-schema.org/draft/2019-09/schema\",",
+									"    \"$id\": \"http://example.com/example.json\",",
+									"    \"type\": \"object\",",
+									"    \"default\": {},",
+									"    \"title\": \"Root Schema\",",
+									"    \"required\": [",
+									"        \"id\",",
+									"        \"joke\",",
+									"        \"status\"",
+									"    ],",
+									"    \"properties\": {",
+									"        \"id\": {",
+									"            \"type\": \"string\",",
+									"            \"default\": \"\",",
+									"            \"title\": \"The id Schema\",",
+									"            \"examples\": [",
+									"                \"BsHtcN7hiqc\"",
+									"            ]",
+									"        },",
+									"        \"joke\": {",
+									"            \"type\": \"string\",",
+									"            \"default\": \"\",",
+									"            \"title\": \"The joke Schema\",",
+									"            \"examples\": [",
+									"                \"What do you give a sick lemon? Lemonaid.\"",
+									"            ]",
+									"        },",
+									"        \"status\": {",
+									"            \"type\": \"integer\",",
+									"            \"default\": 0,",
+									"            \"title\": \"The status Schema\",",
+									"            \"examples\": [",
+									"                200",
+									"            ]",
+									"        }",
+									"    },",
+									"    \"examples\": [{",
+									"        \"id\": \"BsHtcN7hiqc\",",
+									"        \"joke\": \"What do you give a sick lemon? Lemonaid.\",",
+									"        \"status\": 200",
+									"    }]",
+									"} // Full output from jsonschema.net goes in this var",
+									"",
+									"pm.test('Schema is valid', () => {",
+									"  const jsonData = pm.response.json()",
+									"  pm.expect(tv4.validate(jsonData, schema)).to.be.true",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://icanhazdadjoke.com/",
+							"protocol": "https",
+							"host": [
+								"icanhazdadjoke",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "dad jokes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://icanhazdadjoke.com/",
+									"protocol": "https",
+									"host": [
+										"icanhazdadjoke",
+										"com"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 May 2023 06:29:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-headers",
+									"value": "User-Agent, Content-Type"
+								},
+								{
+									"key": "access-control-allow-methods",
+									"value": "GET"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "access-control-max-age",
+									"value": "86400"
+								},
+								{
+									"key": "access-control-request-method",
+									"value": "GET"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, no-cache, no-store, public, s-maxage=0"
+								},
+								{
+									"key": "retry-after",
+									"value": "60"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "100"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "99"
+								},
+								{
+									"key": "x-ratelimit-reset",
+									"value": "1683613824"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CJDzJW%2B8O1%2FZSeH0kYPkOxJw5xCzr9miMPqDyUb0%2Bnut1OCAqmR6AzKzaNW2nK%2F50zpUFSW85eCYsN1aa%2BNS8%2FYJYh8WSxIae3areoK1WZGwT7jEzfmrw1pzI9c%2FmvSVJSy6%2Bic%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "7c47e342ed5013b3-IAD"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"89MZLmWnWvc\",\n    \"joke\": \"I can't take my dog to the pond anymore because the ducks keep attacking him. That's what I get for buying a pure bread dog.\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "mock dad jokes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://9e5d567e-60fe-4b53-a8e5-7eeb6d490eb5.mock.pstmn.io",
+							"protocol": "https",
+							"host": [
+								"9e5d567e-60fe-4b53-a8e5-7eeb6d490eb5",
+								"mock",
+								"pstmn",
+								"io"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "The term \"serverless\" doesn't mean you don't need servers, but rather you don't need to provision and manage those servers on your own. Similarly, mock services are easy-to-set-up APIs hosted on Postman servers that allow you to simulate real-world services in a controlled setting without the overhead of setting up your own services. \n\n1. **Add a request**: Add the following request `dad jokes` to the `Mock servers` folder.\n  - `GET` method\n  - `https://icanhazdadjoke.com/` request URL\n  - `Accept` header with `application/json` value\n\n  **Send** the request and make sure you receive a successful response.\n1. **Save an example**: [Save the previous response](https://learning.postman.com/docs/sending-requests/examples/#response-from-the-server) as our first example in the response pane: `Save Response` > `Save as example`. When you create the example, you will see a new example (`e.g.`) display beneath the request in the left sidebar. When you send a request to a mock server, Postman matches the request to a saved example in your collection. Postman then responds with the data you added to the example. \n1. **Add a mock**:  Select the more actions icon next to the collection where the request was saved and select **Mock collection**. Name your mock `mockForTesting` and leave the other settings at their defaults. Once you create the mock, copy the mock URL generated by Postman.\n1. **Call the mock**: Return to the folder `Mock services`, and add a second request named `mock dad jokes` with the following details:\n  - `GET` method\n  - Paste the mock URL from the previous step into the request URL field.\n\n  **Send** the call to see the example you saved in the previous step.\n1. **Generate code snippet**: You can use your mock server in your local development too. Once you have an API call working the way you like, select the code icon in the right pane to [generate a code snippet](https://learning.postman.com/docs/sending-requests/generate-code-snippets/) in your preferred language or framework to copy and paste into your own applications and integrations. \n\nNotice when you send the `dad jokes` request, the Dad Jokes server returns a different joke every time. When you send the `mock dad jokes` request, the Postman mock server only sends the same response you saved earlier.\n\nYou can edit the example (`e.g.`) to update the mock response, or [add more examples](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/mocking-with-examples/#step-6-add-another-example).\n\nThis was a simple example of saving a single static response. This functionality is especially helpful for:\n- Designing and prototyping a new service quickly \n- Isolating a system under test during debugging and testing by stubbing out external dependencies\n- Simulating edge cases that may be difficult or costly to incur in production\n- [Taking snapshots](https://www.postman.com/postman/workspace/test-examples-in-postman/collection/1559645-f8f51fd3-13eb-4049-8603-9e8f7b787fbe?ctx=documentation) to enable regression testing\n- [Consumer-driven contract testing](https://medium.com/better-practices/consumer-driven-contract-testing-using-postman-f3580dba5370)\n\nOnce you complete these steps, move on to the next folder in this collection to submit your solution. Follow the instructions in the request documentation."
+		},
+		{
+			"name": "Submit your solution",
+			"item": [
+				{
+					"name": "submit collection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getpostman.com/collections/{{collection_uid}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"collections",
+								"{{collection_uid}}"
+							]
+						},
+						"description": "It's time to check your collection.\n\n1.  **Get the collection ID:** Select the collection in the sidebar. Then in the context bar to the right, select the `Info` icon and copy the collection `ID`.\n1.  **Update the request URL:** Update the `collection_uid` in the request URL with the collection `ID` from the previous step, using any method you prefer. ⚠ Remember to add sensitive values like an API key to the `CURRENT VALUE` (and not `INITIAL VALUE`) of your public workspace.\n1.  **Validate your solution**: Hit **Send** and look under the **Tests** tab of the server response at the bottom to review your test results.\n    \nIf you have any failures, review the failed test results or ask for support in the [community forum](https://community.postman.com/). When all of your tests pass, you are done with today's challenge."
+					},
+					"response": []
+				}
+			],
+			"description": "Follow the instructions in the request documentation."
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "collection_uid",
+			"value": "26365744-0ed235f0-29f1-45e3-bbc7-1d30827ddda8"
+		},
+		{
+			"key": "postman_api_key",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
